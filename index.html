@@ -31,16 +31,16 @@
 
     <!-- Main navigation -->
 
-    <nav class="main-nav z-depth-2">
+    <nav id="main-nav" class="main-nav z-depth-2">
       <div class="container">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">
+            <a href="#main-nav" class="brand-logo center">
               <img src="Image/logo.svg" alt="">
             </a>
           <ul id="nav-mobile" class="hide-on-med-and-down">
             <div class="row">
-              <li class="col s2 nav-li">
-                <a href="#home-page"><i class="fa-solid fa-house li-logo"></i>
+              <li class="col s2 nav-li "> 
+                <a href="#home-page" class="active"><i class="fa-solid fa-house li-logo"></i>
                   <p class="flow-text">HOME</p>
                 </a>
               </li>
@@ -105,7 +105,7 @@
       </li>
 
       <li class="sidenav-li sidenav-close">
-        <a href="#"><i class="fa-solid fa-mug-hot li-logo"></i>
+        <a href="#product-area"><i class="fa-solid fa-mug-hot li-logo"></i>
           <p class="flow-text">
             PRODUCT
           </p>
@@ -113,7 +113,7 @@
       </li>
 
       <li class="sidenav-li sidenav-close">
-        <a href= "#"><i class="fa-solid fa-address-book li-logo"></i>
+        <a href= "#contact-us"><i class="fa-solid fa-address-book li-logo"></i>
           <p class="flow-text">
             CONTACT
           </p>
@@ -128,29 +128,26 @@
 
   <main>
     <!-- Home page area -->
-    <div class="hero-section section parallax-container ">
+    <div class="hero-section section">
       <!-- Floating action button -->
       <div id="floating-btn" class="fixed-action-btn ">
-        <a href="#" class="btn-floating pulse btn-large ">
+        <a href="#!" class="btn-floating pulse btn-large ">
           <i class="fa-solid fa-message fa-2xl"></i>
         </a>
         <ul>
           <li class="btn-floating blue darken-3">
-            <i class="fa-brands fa-twitter"></i>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
           </li>
           <li class="btn-floating yellow darken-1">
-            <i class="fa-brands fa-instagram"></i>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
           </li>
           <li class="btn-floating blue">
-            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/alabangkapedyan" target="_blank"><i class="fa-brands fa-facebook"></i></a>
           </li>
         </ul>
       </div>
 
       <div id="home-page" class="content-section scrollspy">
-        <div class="parallax">
-          <img src="Image/malaking-bg.svg">
-        </div>
         <div class="row home-logo-row">
           <div class="col s8 offset-s2 m6 offset-m3 l6 offset-l3 xl4 offset-xl4 main-logo">
             <p class="center">
@@ -163,12 +160,12 @@
             <div class="center">
               <div class="row btn-area">
                 <div class="col s5  m6 grid-btn order-now">
-                  <a href="" class="btn waves-effect wave-light ">
+                  <a href="https://www.facebook.com/alabangkapedyan" target="_blank" class="btn waves-effect wave-light ">
                     ORDER NOW
                   </a>
                 </div>
                 <div class="col s5 m6 grid-btn learn-more">
-                  <a href="" class="btn waves-effect wave-light learn-more">
+                  <a href="#product-area" class="btn waves-effect wave-light learn-more">
                     LEARN MORE
                   </a>
                 </div>
@@ -190,8 +187,7 @@
               </a>
             </div>
           </div>
-        </div>
-        
+        </div>       
       </div>
     </div>
 
@@ -203,12 +199,24 @@
             <div class="slides z-depth-3">
               <li>
                 <img src="Image/preview/1.svg" alt="">
+                <div class="caption center-align">
+                  <h3 class="black-text">Alabang Kape Dyan: <br> Where Coffee Meets Delight.</h3>
+                  <h5 class="black-text">Sip, savor, repeat.</h5>
+                </div>
               </li>
               <li>
                 <img src="Image/preview/2.svg" alt="">
+                <div class="caption left-align">
+                  <h3 class="black-text">Your daily dose of delight.</h3>
+                  <h5 >Awakening the World, One Sip at a Time.</h5>
+                </div>
               </li>
               <li>
                 <img src="Image/preview/3.svg" alt="">
+                <div class="caption right-align">
+                  <h3>Alabang Kape Dyan: <br> Brewed to Perfection.</h3>
+                  <h5 >Handcrafted, just for you.</h5>
+                </div>
               </li>
             </div>
           </div>
@@ -217,7 +225,7 @@
 
       <!-- Arrow up -->
       <div id="arrow-up-icon" class="fixed-action-btn arrow-up hide-btn">
-        <a href="#home-page" class="btn-floating">
+        <a href="#main-nav" class="btn-floating">
           <i class="fa-solid fa-angles-up"></i>
         </a>
       </div>
@@ -261,7 +269,7 @@
                     </div>
                     <div class="collapsible-body">                      
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fuga suscipit ipsa cumque eius dolorum facilis animi dicta officiis doloremque perspiciatis, ullam excepturi aut sed consequatur quos ab officia dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fuga suscipit ipsa cumque eius dolorum facilis animi dicta officiis doloremque perspiciatis, ullam excepturi aut sed consequatur quos ab officia dolorem. 
+                        "Alabang Kape Dyan" is your go-to coffee shop for a delightful selection of hot and iced coffee. We serve up a range of expertly crafted coffee beverages to satisfy your caffeine cravings, all in a cozy and inviting ambiance. Come and enjoy a perfect cup of coffee with us!
                       </p>                  
                     </div>
                   </li>
@@ -280,7 +288,7 @@
           <h2>
             Our <code class="h2-text">special product</code> 
           </h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa vel suscipit unde at iusto veritatis qui nisi officia eum quaerat porro architecto</p>
+          <p>Indulge in our special creation, a coffee experience like no other.</p>
         </div>
       </div>
 
@@ -316,8 +324,12 @@
                             <img src="Image/products/1.svg" class="responsive-img" alt="">
                           </div>
                           <div class="card-content">
-                            <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                            <p><a href="">A link</a></p>
+                            <span class="card-title activator">Ice Blend Vanilla <span class="prices">₱120</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                            <p><a href="">Order now</a></p>
+                          </div>
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ice Blend Vanilla<i class="material-icons right">close</i></span>
+                            <p>Indulge in the creamy delight of Ice Blend Vanilla for only 120 pesos!</p>
                           </div>
                         </div>
                       </div>
@@ -328,8 +340,12 @@
                             <img src="Image/products/2.svg" class="responsive-img" alt="">
                           </div>
                           <div class="card-content">
-                            <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                            <p><a href="">A link</a></p>
+                            <span class="card-title activator">Salted Caramel &nbsp; <span class="prices">₱95</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                            <p><a href="">Order now</a></p>
+                          </div>
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ice Blend Vanilla<i class="material-icons right">close</i></span>
+                            <p>Savor the perfect blend of sweetness and salt with our Salted Caramel treat, just 120 pesos!</p>
                           </div>
                         </div>
                       </div>
@@ -340,8 +356,12 @@
                             <img src="Image/products/3.svg" class="responsive-img" alt="">
                           </div>
                           <div class="card-content">
-                            <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                            <p><a href="">A link</a></p>
+                            <span class="card-title activator">Caramel Makyato &nbsp; <span class="prices">₱105</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                            <p><a href="">Order now</a></p>
+                          </div>
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ice Blend Vanilla<i class="material-icons right">close</i></span>
+                            <p>Experience the rich and velvety goodness of Caramel Macchiato, a steal at just 120 pesos!</p>
                           </div>
                         </div>
                       </div>
@@ -355,11 +375,23 @@
                       <div class="col s4">
                         <div class="card">
                           <div class="card-image">
+                            <img src="Image/products/2.svg" class="responsive-img" alt="">
+                          </div>
+                          <div class="card-content">
+                            <span class="card-title activator">Salted Caramel &nbsp; <span class="prices">₱95</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                            <p><a href="">Order now</a></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s4">
+                        <div class="card">
+                          <div class="card-image">
                             <img src="Image/products/3.svg" class="responsive-img" alt="">
                           </div>
                           <div class="card-content">
-                            <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                            <p><a href="">A link</a></p>
+                            <span class="card-title activator">Caramel Makyato &nbsp; <span class="prices">₱105</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                            <p><a href="">Order now</a></p>
                           </div>
                         </div>
                       </div>
@@ -370,20 +402,8 @@
                             <img src="Image/products/1.svg" class="responsive-img" alt="">
                           </div>
                           <div class="card-content">
-                            <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                            <p><a href="">A link</a></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col s4">
-                        <div class="card">
-                          <div class="card-image">
-                            <img src="Image/products/2.svg" class="responsive-img" alt="">
-                          </div>
-                          <div class="card-content">
-                            <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                            <p><a href="">A link</a></p>
+                            <span class="card-title activator">Ice Blend Vanilla &nbsp; <span class="prices">₱120</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                            <p><a href="">Order now</a></p>
                           </div>
                         </div>
                       </div>
@@ -519,9 +539,13 @@
                       <img src="Image/products/small/1.svg" class="responsive-img" alt="">
                     </div>
                     <div class="card-content">
-                      <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                      <p><a href="">A link</a></p>
+                      <span class="card-title activator">Ice Blend Vanilla &nbsp; <span class="prices">₱120</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                      <p><a href="">Order now</a></p>
                     </div>
+                    <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ice Blend Vanilla<i class="material-icons right">close</i></span>
+                            <p>Indulge in the creamy delight of Ice Blend Vanilla for only 120 pesos!</p>
+                          </div>
                   </div>
                 </div>
               </div>
@@ -535,9 +559,13 @@
                       <img src="Image/products/small/2.svg" class="responsive-img" alt="">
                     </div>
                     <div class="card-content">
-                      <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                      <p><a href="">A link</a></p>
+                      <span class="card-title activator">Salted Caramel &nbsp; <span class="prices">₱95</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                      <p><a href="">Order now</a></p>
                     </div>
+                    <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ice Blend Vanilla<i class="material-icons right">close</i></span>
+                            <p>Savor the perfect blend of sweetness and salt with our Salted Caramel treat, just 120 pesos!</p>
+                          </div>
                   </div>
                 </div>
               </div>
@@ -551,9 +579,13 @@
                       <img src="Image/products/small/3.svg" class="responsive-img" alt="">
                     </div>
                     <div class="card-content">
-                      <span class="card-title activator grey-text">Title<i class="fa-solid fa-ellipsis-vertical right"></i></span>
-                      <p><a href="">A link</a></p>
+                      <span class="card-title activator">Caramel Makyato &nbsp; <span class="prices">₱105</span><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                      <p><a href="">Order now</a></p>
                     </div>
+                    <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ice Blend Vanilla<i class="material-icons right">close</i></span>
+                            <p>Experience the rich and velvety goodness of Caramel Macchiato, a steal at just 120 pesos!</p>
+                          </div>
                   </div>
                 </div>
               </div>
@@ -627,33 +659,39 @@
     <!-- Contact us area -->
     <div id="contact-us" class="section">
       <div class="row">
-        <div class="col m6 s12 contact-area">
-          <h1 class="center contact-h1">CONTACT US</h1>
-          <div class="row">
-            <div class="col s10 offset-s1 m6 offset-m4 soc-area">
-              <div class="card-panel center">
-                <a href="">
-                  <i class="fa-brands fa-facebook"></i>
-                  <p>Follow us on Facebook</p>
-                </a>
-              </div>
+        <div class="container">
+          <div class="col m6 s12 contact-area">
+            <div class="container">
+              <h1 class="center contact-h1">CONTACT US</h1>
             </div>
-
-            <div class="col s10 offset-s1 m6 offset-m4 soc-area">
-              <div class="card-panel center">
-                <a href="">
-                  <i class="fa-brands fa-square-instagram pink-text text-lighten-2"></i>
-                  <p>Follow us on Instagram</p>
-                </a>
-              </div>
-            </div>
-
-            <div class="col s10 offset-s1 m6 offset-m4 soc-area">
-              <div class="card-panel center">
-                <a href="">
-                  <i class="fa-brands fa-square-x-twitter black-text"></i>
-                  <p>Follow us on Twitter</p>
-                </a>
+            <div class="row">
+              <div class="container">
+                <div class="col s10  m6 offset-m2 soc-area">
+                  <div class="card-panel center">
+                    <a href="https://www.facebook.com/alabangkapedyan" target="_blank">
+                      <i class="fa-brands fa-facebook"></i>
+                      <p>Follow us on Facebook</p>
+                    </a>
+                  </div>
+                </div>
+    
+                <div class="col s10  m6 offset-m2 soc-area">
+                  <div class="card-panel center">
+                    <a href="">
+                      <i class="fa-brands fa-square-instagram pink-text text-lighten-2"></i>
+                      <p>Follow us on Instagram</p>
+                    </a>
+                  </div>
+                </div>
+    
+                <div class="col s10  m6 offset-m2 soc-area">
+                  <div class="card-panel center">
+                    <a href="">
+                      <i class="fa-brands fa-square-x-twitter black-text"></i>
+                      <p>Follow us on Twitter</p>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -667,27 +705,31 @@
 
 
   </main>
-
+<!-- Footer page -->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col m6 offset-m1 s11">
-          <img src="Image/logo.svg" class="responsive-img" alt="">
-          <ul class="links">
-            <li><a href="">Home</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-          <ul class="soc-links">
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
-          </ul>
+        <div class="col m6 offset-m1 s12">
+          <div class="container link-content">
+            <img src="Image/logo.svg" class="responsive-img" alt="">
+            <div class="container">
+              <ul class="links">
+                <li><a href="#main-nav">Home</a></li>
+                <li><a href="#about-us"><span>About us</span></a></li>
+                <li><a href="#product-area">Product</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+              </ul>
+            </div>
+            <ul class="soc-links">
+              <li><a href="https://www.facebook.com/alabangkapedyan" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            </ul>
+          </div>
         </div>
 
         <div class="col m4 offset-m1 s11 center">
-          <h5>REACH US</h5>
+          <h5 class="reach-h5">REACH US</h5>
           <ul class="reach-us">
             <li><a href="#!"><i class="fa-solid fa-location-dot"></i> <span>492 jp st malved sngia</span></a></li>
             <li><a href="#!"><i class="fa-solid fa-envelope"></i> <span>alabangkapedyan@gmail.com</span></a></li>

@@ -94,8 +94,8 @@ $(document).ready(function(){
     $('.slider').slider({
         indicators: true,
         height: 450,
-        duration:500,
-        interval: 2000
+        duration:1000,
+        interval: 5000
     });
 });
 
