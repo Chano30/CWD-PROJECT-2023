@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Rye&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 45%;
+}
+
+/* Home page background */
+.hero {
+  background-image: url('Image/background.svg');
+  background-size: cover; /* Make the background cover the entire section */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-attachment: fixed; /* Optional: Fix the background so it doesn't scroll */
+  height: 100vh; /* Set the height of the section to the viewport height */
+  margin-top: -80px; /* Adjust this value as needed to align the content with the navbar */
+  z-index: -1;
+}
+
+
+nav {
+  color: transparent;
+  background-color:transparent !important;
+  width: 100%;
+  height: 80px;
+  line-height: 56px;
+  overflow: hidden;
+}
+
+nav.nav-container{
+  box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* Navigation effects */
+nav ul a {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #160b0b;
+  display: block;
+  padding: 0px 27px 17px 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+
+
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0; /* Position the border at the bottom of the <a> tag */
+  left: 0;
+  width: 100%;
+  height: 5px; /* Set the height of the border */
+  background-color:rgb(255, 102, 0); /* Set the color of the border */
+  transform: scaleX(0); /* Initially scale the border to zero width */
+  transform-origin: left center; /* Set the transformation origin to the left */
+  transition: transform 0.3s; /* Apply a transition to the transform property */
+  z-index: 1;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1); /* Scale the border to full width on hover */
+  z-index: 1;
+}
+
+
+
+/* Main navigation position */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+}
+
+nav .nav-wrapper .main-nav{
+  line-height: 0;
+}
+/* Brand logo positioning */
+nav .brand-logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 20px 0;
+}
+/* Main nav text design */
+.flow-text{
+  font-family: 'Rye', cursive;
+  font-size: 1rem;
+  color: rgb(180, 75, 4);
+  font-weight: 1100;
+  letter-spacing: 3px;
+}
+
+
+/* main sidenav code */
+.sidenav {
+  right: 0 !important;
+  top: 0;
+  margin: 0;
+  background-color: #ac5959;
+}
+
+/* to modify burger */
+.fa-bars{
+  font-size: 2.8rem;
+}
+
+
+/* Sidenav positioning */
+.row-nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.sidenav li {
+  padding: 20px 0;
+}
+
+.sidenav li>a {
+  color: rgb(191 172 172 / 87%);
+  display: block;
+  font-size: 33px;
+  font-weight: 900;
+  height: 48px;
+  line-height: 48px;
+}
+
+
+
+/* Side navbar text design */
+
+.flow-text-side {
+  font-family: 'Rye', cursive;
+  font-size: 1.5rem;
+  color: rgb(53, 5, 5);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.home-design{
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-design .blck-logo{
+  position: absolute;
+  margin-bottom: 7px;
+}
+
+
+/* image main height and width */
+.home-design img{
+  position: absolute;
+  width: 500px;
+  height: 600px;
+}
+
+@media only screen and (max-width: 1540px){
+  .container{
+    width: 55%;
+  }
+
+  .home-design img{
+    position: absolute;
+    width: 350px;
+    height: 600px;
+  }
+}
+
+/* Button */
+.row {
+  position: absolute;
+  bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1115px){
+.container {
+    width: 80%;
+}
+
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+  line-height: 70px;
+}
+}
